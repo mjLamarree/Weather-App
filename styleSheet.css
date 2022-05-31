@@ -2,3 +2,10 @@ Body{
     display: grid;
     place-items: center;
 }
+.weatherCard{
+    display: grid;
+    place-items: center;
+    background-color: burlywood;
+    height: 400px;
+    width: 600px;
+}
