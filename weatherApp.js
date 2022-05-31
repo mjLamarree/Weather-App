@@ -16,3 +16,12 @@ async function getWeather(){
     const weatherData = await response.json();
     return weatherData;
 }
+
+
+getWeather().then(function(data){
+   console.log(data)
+   weatherCardCity.textContent = data.name
+   weatherCardCurrentTemp.textContent = data.main.temp
+   weatherCardMaxMinTemp.textContent = `High of ${data.main.temp_max} , Low of ${data.main.temp_min}`
+   weatherCardCloudCoverage.textContent = data.weather[0].description
+})
