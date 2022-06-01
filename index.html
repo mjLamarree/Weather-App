@@ -11,11 +11,15 @@
     <header class="titleCard">
         <h2>Whats the Weather in....</h2>
     </header>
-
-    <form>
-        <label for="citySearch">Search City:</label>
-        <input type="search" id="searchBar" name="citySearch">
-    </form>
+    <div class="searchBar" id="searchBarDiv">
+         <form>
+            <label for="citySearch">City:</label>
+            <input type="text" id="citySearch" name="citySearch">
+            <label for="stateSearch">Country:</label>
+            <input type="text" id="countrySearch" name="countrySearch">
+            <input type="submit" value="Go!">
+        </form>
+    </div>
 
     <div>
         <div class="weatherCard">
